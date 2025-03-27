@@ -1,0 +1,103 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Floating Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--header-bg);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+    display: flex;
+    justify-content: space-between; /* Push items apart */
+    align-items: center;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a, #themeToggle {
+    color: inherit;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+}
+
+/* Sections */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--header-bg);
+    color: var(--text-color);
+}
+
+/* Default (Dark Ferrari Theme) */
+:root {
+    --header-bg: black;
+    --text-color: white;
+    --bg-color: #1a1a1a;
+    --accent-color: red;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Light McLaren Theme */
+.light-mode {
+    --header-bg: white;
+    --text-color: black;
+    --bg-color: #f1f1f1;
+    --accent-color: orange;
+}
+
+.themeToggle{
+    position:fixed;
+     right:50px;
+}
+
+.theme-toggle {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    right: 100px;
+}
